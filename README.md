@@ -15,12 +15,12 @@ Before you begin, ensure you have the following:
 
 Installation
 
-    Clone this Repository:
+Clone this Repository:
 
-    bash
-
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+bash
+    
+    git clone https://github.com/yourusername/your-repo.git
+    cd your-repo
 
 Install Required Packages:
 
@@ -32,13 +32,13 @@ bash
 
 Usage
 
-    Setup and Run:
+Setup and Run:
 
-        Open a new Google Colab notebook.
+Open a new Google Colab notebook.
 
-        Copy and paste the following code into a cell:
+Copy and paste the following code into a cell:
 
-        python
+python
 
     from fastapi import FastAPI, Request
     from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
@@ -79,15 +79,15 @@ Usage
 
 Access the API:
 
-    After running the code, you'll see a public URL printed in the output. This URL is the endpoint for your FastAPI server.
+After running the code, you'll see a public URL printed in the output. This URL is the endpoint for your FastAPI server.
 
-    You can send POST requests to the /generate/ endpoint with a JSON body containing your input text.
+You can send POST requests to the /generate/ endpoint with a JSON body containing your input text.
 
-    json
-
-{
-  "text": "Your input text here"
-}
+json
+    
+    {
+      "text": "Your input text here"
+    }
 
 The server will return a JSON response with the generated code:
 
